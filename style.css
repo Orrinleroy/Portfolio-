@@ -190,6 +190,7 @@ body {
     background-color: #9900cc;
     transform: translateY(-2px);
 }
+
 .skills-section {
     padding: 4rem 2rem;
     text-align: center;
@@ -252,3 +253,4 @@ body {
         flex-direction: column;
     }
 }
+
