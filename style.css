@@ -190,7 +190,6 @@ body {
     background-color: #9900cc;
     transform: translateY(-2px);
 }
-
 .skills-section {
     padding: 4rem 2rem;
     text-align: center;
@@ -253,4 +252,275 @@ body {
         flex-direction: column;
     }
 }
+.experience-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
 
+.experience-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.experience-subheading {
+    color: #8b8b8b;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #6c63ff;
+}
+
+.timeline-card {
+    background-color: rgba(108, 99, 255, 0.1);
+    border: 1px solid #6c63ff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: left;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #6c63ff;
+}
+
+.timeline-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.timeline-card h4 {
+    font-size: 1.1rem;
+    color: #8b8b8b;
+    margin-bottom: 1rem;
+}
+
+.timeline-card p {
+    color: #a9a9a9;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 1rem;
+    }
+    
+    .timeline-card {
+        margin-left: 3rem;
+    }
+    
+    .timeline-card::before {
+        left: -2rem;
+    }
+}
+.education-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.education-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.education-subheading {
+    color: #8b8b8b;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #6c63ff;
+}
+
+.education-card {
+    background-color: rgba(108, 99, 255, 0.1);
+    border: 1px solid #6c63ff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: left;
+}
+
+.education-card::after {
+    content: '';
+    position: absolute;
+    right: -2.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #6c63ff;
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.education-card h4 {
+    font-size: 1.1rem;
+    color: #8b8b8b;
+    margin-bottom: 0.5rem;
+}
+
+.education-card .year {
+    font-size: 0.9rem;
+    color: #6c63ff;
+    margin-bottom: 1rem;
+}
+
+.education-card .grade {
+    background-color: rgba(108, 99, 255, 0.2);
+    color: #6c63ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.education-card p {
+    color: #a9a9a9;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .education-timeline::before {
+        right: 1rem;
+    }
+    
+    .education-card {
+        margin-right: 3rem;
+    }
+    
+    .education-card::after {
+        right: -2rem;
+    }
+}
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-subheading {
+    color: #8b8b8b;
+    margin-bottom: 3rem;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(30, 30, 36, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #6c63ff;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-title .rocket {
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(40, 40, 46, 0.9);
+    border: 1px solid #3a3a43;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to right, #b300ff, #6c63ff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+::placeholder {
+    color: #8b8b8b;
+}
