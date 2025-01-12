@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="project.css"
-
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
+    <!-- Navigation remains the same -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="index.html">
@@ -40,97 +40,1082 @@
         </div>
     </nav>
 
+
     <section class="projects-section">
         <h2 class="projects-heading">Projects</h2>
-        <p class="projects-subheading">Here are some projects I've worked on to showcase my skills and experience.</p>
-        
+        <p class="projects-subheading">I have worked on a diverse range of quality engineering projects, from process optimization to 
+            defect reduction initiatives. Below are some of the key projects I've contributed to.</p>
         <div class="container">
             <div class="row">
                 <!-- Project Card 1 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <img src="/images/temp.png" alt="Project 1" class="project-image">
-                        <h3 class="project-title">E-Commerce Website</h3>
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                        <img src="/images/six_sigma.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">SIX SIGMA PROJECT</h3>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Redux</span>
-                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">June 2024</span>
                         </div>
                         <p class="project-description">
-                            A full-featured e-commerce platform with product catalog, shopping cart, 
-                            and checkout functionality. Implements state management with Redux and 
-                            responsive design with Bootstrap.
+                            A Six Sigma Black Belt project reduced the defect rate of the LS-331C stamped automotive part from 8% to 
+                            below 1% in 3 months. By addressing cracks and splits through root cause analysis and process improvements, 
+                            customer complaints and financial losses were minimized. The project achieved a process capability of 
+                            Cpk = 1.45.
                         </p>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
                                 <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
                                 Source Code
                             </a>
-                            <a href="#" class="project-link">
-                                <img src="/images/play.png" alt="Live" width="20px" height="20px"w>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
                                 Live Demo
                             </a>
                         </div>
                     </div>
-                </div>
-
+                </div>  
                 <!-- Project Card 2 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <img src="/images/temp.png" alt="Project 2" class="project-image">
-                        <h3 class="project-title">Weather Dashboard</h3>
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                        <img src="/images/8d_project.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">NOTABLE 8D's</h3>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">December 2024</span>
                         </div>
                         <p class="project-description">
-                            Real-time weather application that displays current conditions and 
-                            forecasts. Features dynamic updates and geolocation support.
+                            A thorough breakdown of each step in the 8D process with added explanations, data-driven actions, and 
+                            Six Sigma tools for precise root cause identification and resolution. It incorporates both a structured 
+                            root cause analysis and the corresponding corrective actions.
                         </p>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
                                 <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
                                 Source Code
                             </a>
-                            <a href="#" class="project-link">
-                                <img src="/images/play.png" alt="Live" width="20px" height="20px"w>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
                                 Live Demo
                             </a>
-                        </div>
+                        </div>    
                     </div>
                 </div>
-
                 <!-- Project Card 3 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <img src="/images/temp.png" alt="Project 3" class="project-image">
-                        <h3 class="project-title">Task Manager</h3>
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                        <img src="/images/lean1.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">Lean Project 1</h3>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Redux-Toolkit</span>
-                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Sep to Dec 2018</span>
                         </div>
                         <p class="project-description">
-                            A responsive task management application with drag-and-drop functionality, 
-                            task categories, and priority levels. Built with modern React practices.
+                            Low Production Rate in Injection Molding Process, QM Plastics, Windsor, Canada 
                         </p>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
                                 <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
                                 Source Code
                             </a>
-                            <a href="#" class="project-link">
-                                <img src="/images/play.png" alt="Live" width="20px" height="20px"w>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Project Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                        <img src="/images/lean2.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">LEAN project 2</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jan To April 2019</span>
+                        </div>
+                        <p class="project-description">
+                            Productivity Improvement of a Press at Canadian Electrocoating Ltd.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
+                                Source Code
+                            </a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Project Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                        <img src="/images/six_sigma.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">LEAN Project 3</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">April to July 2019</span>
+                        </div>
+                        <p class="project-description">
+                            Process Improvement using Lean Manufacturing tools
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
+                                Source Code
+                            </a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
                                 Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
+                <!-- Project Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                        <img src="/images/plant.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">Semi-automatic flower knotting device</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Aug to Dec 2015</span>
+                        </div>
+                        <p class="project-description">
+                            <h6>Patent no: 5150/CHE/2015</h6>
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
+                                Source Code
+                            </a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#project7Modal">
+                        <img src="/images/wrist.jpg" alt="Project 1" class="project-image">
+                        <h3 class="project-title">Arduous Therapist- a hand and wrist cpm</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jan to Apr 2016</span>
+                        </div>
+                        <p class="project-description">
+                            <h6>Patent no: E-5/523/2016-CHE</h6>
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/white git.webp" alt="Github" width="20px" height="20px">
+                                Source Code
+                            </a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                <img src="/images/play.png" alt="Live" width="20px" height="20px">
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+
+
             </div>
         </div>
     </section>
 
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Six Sigma Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">June 2024</span>
+                    </div>
+                    <h5 class="modal-section-title">Executive Summary</h5>
+                    <p>The project was undertaken to address high defect rates in the stamping process of LS-331C, with the following key goals:</p>
+                    <ul>
+                        <b>
+                            <li>Reduce defects from 8% to below 1%.</li>
+                            <li>Improve process capability from Cpk = 0.73 to ≥1.33.</li>
+                            <li>Save $190,000 annually in rework and scrap costs.</li>
+                        </b>
+                    </ul>
+                    <h6 class="modal-section-title">Approach</h6>
+                    <p>Using the DMAIC (Define-Measure-Analyze-Improve-Control) methodology, the team applied advanced Six Sigma Black 
+                        Belt tools to identify and mitigate the root causes of defects.</p>
+                    <ol type="1">
+                        <li><h6>Define Phase</h6></li>
+                            <ul>
+                                <li>Created a project charter to define objectives, scope, and deliverables.</li>
+                                <li>Mapped the high-level process using a SIPOC diagram.</li>
+                                <li>Established CTQs, focusing on defect-free parts and process stability.</li>
+                            </ul>
+                        <li><h6>Measure Phase</h6></li>
+                        <ul>
+                            <li>Conducted a Pareto Analysis to prioritize defect types (65% cracks, 35% splits)</li>
+                            <li>Baseline performance metrics showed a defect rate of 8% and Cpk = 0.73.</li>
+                            <li>Measurement system analysis (Gauge R&R) indicated 12% variability, necessitating improved measurement processes</li>
+                        </ul>
+                        <li><h6>Analyze Phase</h6></li>
+                            Root Cause Analysis using a Fishbone Diagram identified key factors :-
+                            <ul>
+                                <li>Material thickness variability.</li>
+                                <li>Die misalignment during setups.</li>
+                                <li>Inconsistent lubrication application.</li>
+                                <li>Insufficient operator training.</li>
+                                <li>Statistical tools, including regression analysis, confirmed a strong correlation (R² = 0.84) between material variability and defects.</li>
+                                <li>FMEA highlighted material thickness as the highest-risk factor, with an RPN of 270.</li>
+                            </ul>
+                        <li><h6>Improve Phase</h6></li>
+                            Implemented solutions :-
+                            <ul>
+                                <li>Updated supplier specifications to reduce material thickness variability (±0.05 mm).</li>
+                                <li>Installed die alignment sensors and upgraded to automated lubrication dispensers.</li>
+                                <li>Conducted targeted operator training.</li>
+                                <li>Performed a Design of Experiments (DOE) to determine optimal press force and lubrication levels.</li>
+                                <li>Piloted improvements on a single line, reducing defects to 0.9%.</li>
+                            </ul>
+                        <li><h6>Control Phase</h6></li>
+                        <ul>
+                            <li>Introduced Statistical Process Control (SPC) to monitor key variables.</li>
+                            <li>Updated Standard Operating Procedures (SOPs) and trained operators on process changes.</li>
+                            <li>Scheduled monthly audits for die alignment and lubrication system maintenance.</li>
+                            <li>Implemented Poka-Yoke mechanisms, such as visual die alignment markers, to prevent recurrence.</li>
+                        </ul>                          
+                    </ol>
+
+                    <h6 class="modal-section-title">Results</h6>
+                    <ul>
+                        <li><b>Defect Rate:</b> Reduced from 8% to 0.7%.</li>
+                        <li><b>Financial Savings:</b> Achieved annual savings of $190,000.</li>
+                        <li><b>Customer Satisfaction:</b> Reduced complaints by 95%.</li>
+                        <li><b>Process Capability:</b> Improved from Cpk = 0.73 to 1.45.</li>
+                        <li><b>Machine Downtime:</b> Reduced by 30%.</li>
+                    </ul>
+                    <h6 class="modal-section-title">Key Technical Tools Utilized</h6>
+                    <ul>
+                        <li><b>DMAIC Methodology:</b> Framework for structured problem-solving.</li>
+                        <li><b>Pareto Analysis:</b> Prioritizing defect types.</li>
+                        <li><b>SPC Charts:</b> Monitoring process stability.</li>
+                        <li><b>Gauge R&R:</b> Measurement system evaluation.</li>
+                        <li><b>FMEA:</b> Risk analysis and mitigation.</li>
+                        <li><b>Regression Analysis:</b> Identifying critical relationships between variables.</li>
+                        <li><b>DOE:</b> Optimizing process parameters.</li>
+                        <li><b>Poka-Yoke:</b> Error-proofing solutions.</li>
+                    </ul>
+                    <p>The project demonstrated the effectiveness of Six Sigma principles in resolving manufacturing challenges, 
+                        delivering significant quality and financial benefits while ensuring long-term process stability.</p>
+                        <div>
+                            <img class="graph" src="images/graph1.png" width="100%" height="100%" alt="graph1"><br>
+                        </div>
+                        <div>
+                            <img class="graph" src="images/graph2.png" width="100%" height="100%" alt="graph2"><br>
+                        </div>
+                        <div>
+                            <img class="graph" src="images/graph 3.png" width="100%" height="100%" alt="graph3">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal for project 2-->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Notable 8D</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">December 2024</span>
+                    </div>
+                    <h4 class="modal-section-title">Executive Summary</h4>
+                    <p>A thorough breakdown of each step in the 8D process with added explanations, data-driven actions, and 
+                        Six Sigma tools for precise root cause identification and resolution. It incorporates both a structured root 
+                        cause analysis and the corresponding corrective actions.</p>
+                    <h5 class="modal-section-title">Step 1 : Team Formation (D1)</h5>
+                    <p><b>Objective : </b>Assemble a cross-functional team to address the flatness issue.</p>
+                    <h6>Team Members :-</h6>
+                    <ul>
+                        <li>Quality Engineer (Team Lead)</li>
+                        <li>Production Supervisor</li>
+                        <li>Maintenance Technician</li>
+                        <li>Process Engineer</li>
+                        <li>Operator Representative</li>
+                        <li>Customer Quality Representative</li>                          
+                    </ul>
+                    <strong>Why:</strong> A diverse team ensures a holistic approach to identifying and resolving the issue.
+
+                    <h5 class="modal-section-title">Step 2 : Problem Description (D2)</h5>
+                    <p><b>Problem Statement : </b>A stamped automotive part exhibits flatness deviations. Customers reported assembly difficulties, resulting in a complaint.       </p>
+                    <h6>Specifications :-</h6>
+                    <ul>
+                        <li><strong>Flatness Tolerance:</strong> Not defined on the drawing.</li>
+                        <li><strong>Observed Deviation:</strong> Up to 0.68 mm.</li>
+                        <li><strong>Defect Rate:</strong> 8% of inspected parts exceeded acceptable flatness during the customer’s audit.</li>
+                    </ul>
+                    <h6>Impact :-</h6>
+                    <ul>
+                        <li>Assembly delays on the customer line.</li>
+                        <li>Potential contractual penalties</li>
+                    </ul>
+                    
+                    <h5 class="modal-section-title">Step 3 : Team Formation (D3)</h5>
+                    <h6>Actions Taken :-</h6>
+                    <ul>
+                        <li>All production halted temporarily.</li>
+                        <li>100% inspection initiated for flatness using a custom flatness gauge.</li>
+                        <li>Defective parts segregated and labeled as non-conforming.</li>
+                        <li>Customer informed about the containment plan.</li>
+                        <li>Outcome: Customer production resumed using inspected conforming parts.</li>
+                    </ul>                    
+
+                    <h5 class="modal-section-title">Step 4 : Team Formation (D3)</h5>
+                    <h6>Tools Used:-</h6>
+                    <ul>
+                        <li><b>Fishbone Diagram : </b> Identified potential causes under categories like Man, Machine, Material, Method and Measurement</li>
+                        <li><b>5 Whys Analysis : </b> Drilled down to identify why the problem occurred and why it was not detected.</li>
+                    </ul>
+                    <h6>Identified Causes :-</h6>
+                    <ol type="1">
+                        <li>Why Made :-</li>
+                        <ul>
+                            <li>Straightener rollers were misaligned.</li>
+                            <li>Straightener settings were not optimized for material thickness.</li>
+                        </ul>
+                        <li>Why Not Detected :-</li>
+                        <ul>
+                            <li>Engineering drawing lacked a flatness callout.</li>
+                            <li>Inspection instructions for the fixture did not include flatness checks.</li>
+                            <li>Operators were unaware of flatness requirements.</li>
+                        </ul>
+                        <li>Systemic Gaps :-</li>
+                        <ul>
+                            <li>No flatness gauge was available for routine inspection.</li>
+                            <li>FMEA did not identify flatness as a critical quality characteristic.</li>
+                        </ul>
+                    </ol>
+
+                    <h5 class="modal-section-title">Step 5 : Permanent Corrective Actions (D5)</h5>
+                    <h6>Machine :-</h6>
+                    <ul>
+                        <li>Calibrated and aligned straightener rollers</li>
+                        <li>Optimized straightener settings using a Design of Experiments (DOE) approach to determine the best parameters.</li>
+                    </ul>
+
+                    <h6>Provess :-</h6>
+                    <ul>
+                        <li>Updated engineering drawings to include a flatness tolerance of ±0.25 mm.</li>
+                        <li>Added flatness checks using a flatness gauge at the inspection station.</li>
+                    </ul>
+
+                    <h6>People</h6>
+                    <ul>
+                        <li>Conducted operator training on flatness requirements.</li>
+                        <li>Implemented standardized work instructions and visual aids for flatness checks.</li>
+                    </ul>
+
+                    <h6>Documentation</h6>
+                    <ul>
+                        <li>Updated FMEA, Control Plan, and Inspection Instructions to include flatness checks as a critical step.</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Step 6 : Verification of Corrective Actions (D6)</h5>
+                    <ul>
+                        <li><b>Process Capabaility Study :</b> Collected flatness measurements over 12 weeks.</li>
+                        <li><b>Pre-Correction Defect Rate :</b> 8%</li>
+                        <li><b>Post-COrrection Defect Rate :</b>Reduced to 0.1%</li>
+                        <li><b>Process Capability Index (cPK) :</b> Improved from 0.8 to 1.5</li>
+                        <li><b>Effectivveness Check :</b> Customer audit verified that all supplied parts met flatness requirements.</li>
+                        <li>Internal audits confirmed adherence to the updated process.</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Step 7 : Prevent Recurrence (D7)</h5>
+                    <h6>Systemic CHanges :-</h6>
+                    <ul>
+                        <li>Updated FMEA to highlight flatness as a high-priority characteristic.</li>
+                        <li>Implemented regular straightener calibration and maintenance schedules.</li>
+                        <li>Introduced a flatness reference plate at the inspection fixture to streamline checks.</li>
+                    </ul>
+                    <h6>Operator Awarness :-</h6>
+                    <ul>
+                        <li>Conducted monthly refresher training sessions.</li>
+                        <li>Posted updated control plans and inspection sheets at workstations.</li>
+                    </ul>
+                
+                    <h5 class="modal-section-title">Step 8 : Team Recognition (D8)</h5>
+                    <h6>Acknowledgment :-</h6>
+                    <ul>
+                        <li>Celebrated team success with a recognition event.</li>
+                        <li>Highlighted individual contributions during a company-wide meeting.</li>
+                    </ul>
+                    <h6>Documentation :-</h6>
+                    <ul>
+                        <li>Compiled a case study to share best practices across other departments.</li>
+                    </ul>
+
+                    <h4 class="modal-section-title">Key Metrics and Results</h4>
+                    <ul>
+                        <li><b>Before Correction:</b>
+                            <ul>
+                                <li>Flatness Defect Rate: 8%.</li>
+                                <li>Cpk: 0.8.</li>
+                            </ul>
+                        </li>
+                        <li><b>>After Correction:</b>
+                            <ul>
+                                <li>Flatness Defect Rate: 0.1%.</li>
+                                <li>Cpk: 1.5.</li>
+                                <li>Customer Satisfaction: Improved; no complaints reported in the following quarter.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4 class="modal-section-title">Visual Aids and Templates (Explanation Only)</h4>
+                    <ul>
+                        <li><strong>Fishbone Diagram:</strong> Displays categorized potential causes.</li>
+                        <li><strong>SPC Chart:</strong> Monitors weekly flatness variations and shows process improvement trends.</li>
+                        <li><strong>FMEA Template:</strong> Updated to include flatness as a critical failure mode.</li>
+                        <li><strong>Control Plan:</strong> Ensures all steps are standardized for quality assurance.</li>
+                    </ul>
+                    <p>This approach demonstrates thorough application of the 8D methodology, with detailed steps, systemic improvements, and data-driven validations.</p>     
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lean Project 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">Sep to Dec 2018</span>
+                    </div>
+
+                    <h5 class="modal-section-title">Problem</h5>
+                    <p>Low Production Rate in Injection Molding Process</p>
+
+                    <h5 class="modal-section-title">Observation</h5>
+                    <p>At QM Plastics, the production rate was significantly lower than expected. The OEE was measured at 72%, 
+                        indicating inefficiencies across three critical components of OEE: availability, performance, and quality.</p>
+    
+                    <h5 class="modal-section-title">Key Issues Identified</h5>
+
+                    <ol type="1">
+                        <li><strong>High Changeover Time :-</strong>
+                            <ul>
+                                <li>Prolonged die changes during setup caused machine idle time.</li>
+                                <li>Lack of proper sequencing and staging for dies, tools, and materials.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Poor Standardized Work :-</strong>
+                            <ul>
+                                <li>Operators followed inconsistent procedures.</li>
+                                <li>Tasks were not clearly documented, leading to variability in execution.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Non-Value-Added Tasks :-</strong>
+                            <ul>
+                                <li>Multiple redundant activities were observed during the die change and operation processes.</li>
+                            </ul>
+                        </li>
+                        <li><strong>No Structured System for Quality Checks :-</strong>
+                            <ul>
+                                <li>Sampling inspections for raw materials and finished goods were irregular, increasing rejection rates.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><b>Solution : </b>Lean Implementation to Address Inefficiencies</p>
+
+                    <h5 class="modal-section-title">Step 1: Problem Understanding through Current State Analysis</h5>
+                    <h6>Value Stream Mapping (VSM) :-</h6>
+                    <ul>
+                        <li>Analyzed the process flow to pinpoint bottlenecks during the setup and operation phases.</li>
+                        <li>Identified a delay of 20-30 minutes per changeover due to manual die alignment and insufficient material staging.</li>
+                    </ul>
+                    <h6>MODAPTS Time Study :-</h6>
+                    <ul>
+                        <li>Decomposed tasks into measurable units to assess inefficiencies.</li>
+                        <li>Found that nearly 32% of the total time spent during setup was non-value-added.</li>
+                    </ul>
+                    
+                    <h5 class="modal-section-title">Step 2: Applying Lean Tools to Reduce Changeover Time</h5>
+                    <h6>Single Minute Exchange of Dies (SMED) :-</h6>
+                    <ul>
+                         <li><strong>Single Minute Exchange of Dies (SMED):</strong>
+                            <ul>
+                                <li>Categorized setup tasks into:</li>
+                                <ul>
+                                    <li><strong>Internal tasks:</strong> Those requiring the machine to be idle.</li>
+                                    <li><strong>External tasks:</strong> Those that could be performed while the machine was running.</li>
+                                </ul>
+                                <li>Shifted tasks such as material staging and die cleaning from internal to external, saving up to 25% of the total setup time.</li>
+                            </ul>
+                        </li>
+                        <li><strong>New Die Staging Process:</strong>
+                            <ul>
+                                <li>Created a pre-staging checklist for operators to ensure all tools and dies were prepared in advance.</li>
+                                <li>Introduced quick-release clamps to speed up die alignment.</li>
+                            </ul>
+                        </li>
+                    </ul>                   
+
+                    <h5 class="modal-section-title">Step 3 Eliminating Non-Value-Added Tasks</h5>
+                    <h6>Single Minute Exchange of Dies (SMED) :-</h6>
+                    <ul>
+                        <li><strong>Yamazumi Chart (Workload Balancing):</strong>
+                            <ul>
+                                <li>Identified redundant steps such as double-checking already staged materials.</li>
+                                <li>Reassigned tasks to reduce overlapping responsibilities among operators.</li>
+                        </ul>
+                        </li>
+                        <li><strong>Process Simplification:</strong>
+                            <ul>
+                                <li>Removed unnecessary tasks, including excessive cleaning of tools already inspected in prior stages.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                        
+                    <h5 class="modal-section-title">Step 4: Improving Workforce Efficiency</h5>
+                    <ul>
+                        <li><strong>Standardized Work Documentation:</strong>
+                            <ul>
+                                <li>Documented step-by-step procedures for setup and operation tasks.</li>
+                                <li>Conducted training sessions for operators to ensure consistent adherence to the new process.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Visual Aids and Job Aids:</strong>
+                            <ul>
+                                <li>Added visual cues such as diagrams and workflows near machines for quick reference.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                        
+                    <h5 class="modal-section-title">Step 5: Enhancing Quality Inspection</h5>
+                    <ul>
+                        <li>Recommended hiring an ASQ Certified Quality Auditor for systematic quality checks.</li>
+                        <li>Developed a sampling plan for raw materials and finished goods to reduce defect rates and improve first-pass yield.</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Step 6: Monitoring and Validation</h5>
+                    <ul>
+                        <li>Conducted a pilot run with the new changes to evaluate effectiveness:
+                            <ul>
+                                <li>Setup time was reduced by 32%.</li>
+                                <li>Machine idle time during die changes decreased from 30 minutes to 18 minutes.</li>
+                            </ul>
+                        </li>
+                        <li>Measured the OEE components post-implementation:
+                            <ul>
+                                <li><strong>Availability:</strong> Improved from 85% to 90%.</li>
+                                <li><strong>Performance:</strong> Increased from 80% to 85%.</li>
+                                <li><strong>Quality:</strong> Enhanced from 90% to 93%.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h5 class="modal-section-title">Final Results</h5>
+                    <ul>
+                        <li>The OEE improved from 72% to 79%, exceeding the industry benchmark.</li>
+                        <li>Achieved a sustainable reduction in changeover times.</li>
+                        <li>Established a culture of continuous improvement by implementing standardized processes and regular training.</li>
+                    </ul>                        
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Modal for Project 4 -->
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LEAN Project 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">Jan To April 2019</span>
+                    </div>
+                    <h5 class="modal-section-title">Problem</h5>
+                    <p>Productivity Loss on Press 1184</p>
+
+                    <h5 class="modal-section-title">Observation</h5>
+                    <p>Press 1184 exhibited significant productivity loss due to inefficiencies in material handling, prolonged 
+                        changeover times, and lack of standardized processes.</p>
+                        
+                    <h5 class="modal-section-title">Key Metrics</h5>
+                    <ul>
+                        <li><b>Baseline Changeover Time : </b> 143 minutes.</li>
+                        <li>Operator idle time and uncoordinated communication further delayed operations</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Task</h5>
+                    <P>Analyze and Resolve Productivity Issues</P>
+
+                    <h5 class="modal-section-title">Goal</h5>
+                    <p>Reduce changeover time, establish standardized processes, and improve overall productivity.</p>
+
+                    <h5 class="modal-section-title">Approach</h5>
+                    <ul>
+                        <li>Utilize 5W1H (Who, What, Where, When, Why, How) to understand the problem comprehensively</li>
+                        <li>Perform a 5WHY Analysis to uncover the root cause.</li>
+                        <li>Apply Lean tools like 5S, SMED, and implement an ANDON system to enhance efficiency and communication.</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Actions</h5>
+                    <ol type="1">
+                        <li>Identifying the Problem with 5W1H :-</li>
+                        <ul>
+                            <li><strong>What?</strong> Press 1184 has unacceptably high changeover times.</li>
+                            <li><strong>Who?</strong> Operators lack a clear system to follow for loading/unloading materials.</li>
+                            <li><strong>Where?</strong> Press operation and staging area for materials.</li>
+                            <li><strong>When?</strong> Changeovers typically occur during shifts, with significant delays.</li>
+                            <li><strong>Why?</strong> Inconsistent processes and no standardized work instructions.</li>
+                            <li><strong>How?</strong> Changeovers involve unnecessary movements, delays, and redundant tasks.</li>
+                        </ul>
+                        <li>Root Cause Analysis Using 5WHY :-</li>          
+                        <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
+                            <thead>
+                                <tr>
+                                    <th style="padding: 8px; background-color: #201f1f;">Why?</th>
+                                    <th style="padding: 8px; background-color: #212020;">Answer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 8px;">Why is the changeover taking so long?</td>
+                                    <td style="padding: 8px;">Excessive manual adjustments during die change.</td>
+                                </tr>
+                                    <tr>
+                                    <td style="padding: 8px;">Why are manual adjustments necessary?</td>
+                                    <td style="padding: 8px;">Operators don't follow a standardized process.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px;">Why is there no standardized process?</td>
+                                    <td style="padding: 8px;">Lack of documented instructions and operator training.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px;">Why hasn't this been addressed before?</td>
+                                    <td style="padding: 8px;">No system in place to highlight delays or track changeover times.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px;">Why is communication lacking?</td>
+                                    <td style="padding: 8px;">No real-time alert system to inform management about delays.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <li>Lean Tools and Implementation :-</li>
+                        <ul>
+                            <li><strong>5S on Press 1184:</strong>
+                                <ul>
+                                    <li>Sorted tools and materials to eliminate unnecessary items.</li>
+                                    <li>Created a shadow board for tools near the press to minimize operator movement.</li>
+                                    <li>Ensured systematic cleaning and maintenance schedules.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Single Minute Exchange of Dies (SMED):</strong>
+                                <ul>
+                                    <li>Segregated internal (machine idle) and external (machine running) tasks.</li>
+                                    <li>Pre-staged materials and tools before the machine was idle.</li>
+                                    <li>Implemented quick-change clamps to simplify die alignment.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Standardized Work Documentation:</strong>
+                                <ul>
+                                    <li>Created a step-by-step guide for operators, reducing variability.</li>
+                                    <li>Conducted operator training sessions to ensure adherence.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Suggested ANDON System:</strong>
+                                <ul>
+                                    <li>Introduced a real-time communication system to alert supervisors and technicians of delays or issues immediately.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Process Monitoring and Follow-Up:</strong>
+                                <ul>
+                                    <li>Conducted periodic audits every three weeks to ensure processes were followed.</li>
+                                </ul>
+                            </li>
+                        </ul>                            
+                    </ol>
+                    <h6 class="modal-section-title">Results</h6>
+                    <p>Verified Improvements</p>
+                    <ol type="1">
+                        <li><strong>Changeover Time Reduction:</strong>
+                            <ul>
+                                <li>Reduced from 143 minutes to 91 minutes (36% improvement).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Productivity Boost:</strong>
+                            <ul>
+                                <li>Increased press uptime and throughput by 25%.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Operator Efficiency:</strong>
+                            <ul>
+                                <li>Reduced unnecessary movements and manual adjustments by 40%.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Improved Communication:</strong>
+                            <ul>
+                                <li>Reduced downtime caused by delayed troubleshooting by implementing ANDON.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                <a href="#" class="btn btn-primary">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal for Project 5 -->
+    <div class="modal fade" id="project5Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lean Project 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">April to July 2019</span>
+                    </div>
+                    <h5 class="modal-section-title">Problem</h5>
+                    <p>The production process at the facility had significant inefficiencies, reflected in a low Overall Equipment Effectiveness (OEE) of 70%. Key issues included :</p>
+                    
+                    <ul>
+                        <li><strong>Motion Waste:</strong> Workers spent excessive time walking between tasks, leading to productivity loss.</li>
+                        <li><strong>Overburden:</strong> Certain workstations were overloaded, while others faced idle time.</li>
+                        <li><strong>Defects:</strong> A recurring quality issue in one process resulted in rework and material waste.</li>
+                    </ul>                    
+
+                    <h5 class="modal-section-title">Task</h5>
+                    <p>The goal was to :-</p>
+                    <ol type="1">
+                        <li><strong>Map the process</strong> to identify inefficiencies and wastes.</li>
+                        <li><strong>Reconfigure the production flow</strong> to reduce motion and overburden.</li>
+                        <li><strong>Implement measures</strong> to eliminate defects and improve quality.</li>
+                        <li><strong>Increase OEE</strong> from 70% to at least 80%.</li>
+                    </ol>
+
+                    <h5 class="modal-section-title">Action Taken</h5>
+                    <ol>
+                        <li>Process Analysis Using Value Stream Mapping (VSM)
+                            <ul>
+                                <li>Conducted a detailed study of the current production state.</li>
+                                <li>Identified key areas contributing to waste:
+                                    <ul>
+                                        <li><strong>Motion Waste:</strong> Workers covered an average distance of 850 meters per shift, resulting in delays.</li>
+                                        <li><strong>Overburden:</strong> Station B experienced 30% higher cycle time than other stations.</li>
+                                        <li><strong>Defects:</strong> Affected 12 out of every 100 parts produced, translating to a defect rate of 12%.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Implementation of Cell Manufacturing
+                            <ul>
+                                <li>Redesigned the layout into a U-shaped cell structure:
+                                    <ul>
+                                        <li>Reduced average worker motion by 300 meters per shift (a 35% reduction).</li>
+                                        <li>Increased production flow, enabling continuous movement of workpieces.</li>
+                                        <li>Conducted ergonomic studies to optimize workstation arrangement.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Work Distribution and Cell Balancing
+                            <ul>
+                                <li>Analyzed cycle times across all stations:
+                                    <ul>
+                                        <li>Average cycle time reduced from 45 seconds to 37 seconds (an 18% improvement).</li>
+                                    </ul>
+                                </li>
+                                <li>Introduced task realignment to balance the load:
+                                    <ul>
+                                        <li>Station B’s workload reduced by 25%, aligning it with other stations.</li>
+                                        <li>Utilized a Yamazumi Chart to visualize and rebalance tasks.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Kaizen for Quality Improvement
+                            <ul>
+                                <li>Conducted root cause analysis using a 5 Whys approach for defects.</li>
+                                <li>Standardized procedures and introduced real-time quality checks.</li>
+                                <li>Implemented a poka-yoke (error-proofing) mechanism to prevent common errors.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <h5 class="modal-section-title">Results</h5>
+                    <ol>
+                        <li>Improved Motion Efficiency
+                            <ul>
+                                <li>Worker movement reduced by 35% (from 850 meters to 550 meters per shift), saving an estimated 20 minutes per shift.</li>
+                            </ul>
+                        </li>
+                        <li>Enhanced OEE
+                            <ul>
+                                <li>Increased from 70% to 82%, achieving a productivity gain of 12%.</li>
+                            </ul>
+                        </li>
+                        <li>Defect Reduction
+                            <ul>
+                                <li>Defect rate reduced from 12% to 9%, saving approximately 30 reworks per day for a batch of 1,000 parts.</li>
+                            </ul>
+                        </li>
+                        <li>Cycle Time Efficiency
+                            <ul>
+                                <li>Average cycle time reduced by 8 seconds, enabling the production of an additional 25 parts per shift.</li>
+                            </ul>
+                        </li>
+                    </ol>                    
+                    <h5 class="modal-section-title">Quantified Impact</h5>
+                    <ul>
+                        <li><b>Time Saved : </b>20 minutes per shift = 10 hours/month for the entire team</li>
+                        <li><b>Cost Savings from Defects : </b>Estimated savings of $2,500/month due to reduced rework.</li>
+                        <li><b>Increased Output : </b>Additional 500 parts produced per month.</li>
+                    </ul>
+                    <h5 class="modal-section-title">Quantified Impact</h5>
+                    <p><b>Production Optimization Using VSM, Cell Manufacturing, and Kaizen</b></p>
+                    <p>Optimized a production process with a low OEE of 70% by analyzing and addressing inefficiencies through Value 
+                        Stream Mapping (VSM). Reduced worker motion by 35% and balanced workloads across stations using Yamazumi Charts. 
+                        Improved cycle time efficiency by 18%, enabling an additional 500 parts per month. Applied Kaizen to reduce 
+                        defect rates by 25%, saving $2,500 in monthly rework costs. These initiatives elevated OEE from 70% to 82%, 
+                        creating a more streamlined and cost-effective operation.</p>
+                    
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 6 -->
+    <div class="modal fade" id="project6Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Semi-automatic flower knotting device</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">Aug to Dec 2015</span>
+                    </div>
+                    <h5 class="modal-section-title">Problem</h5>
+                    <p>The manual process of stringing jasmine flowers in Madurai, a region renowned for its jasmine cultivation, 
+                        posed significant challenges for workers. Key problems included :-</p>
+                    <ul>
+                        <li><b>Health Issues : </b>Prolonged manual stringing caused back pain, nerve weakness, eye strain, finger hardening, and mental stress.</li>
+                        <li><b>Productivity Bottlenecks : </b>Manual labor limited the stringing rate, affecting supply to both national and international markets</li>
+                        <li><b>Market Constraints : </b>Due to inefficiencies, the region struggled to meet increasing global demand for jasmine flowers.</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Task</h5>
+                    <p>The goal was to design and develop an automated solution to:</p>
+                    <ol type="1">
+                        <li>Reduce the physical strain on workers.</li>
+                        <li>Improve productivity by automating flower stringing.</li>
+                        <li>Expand the market reach of Madurai jasmine flowers nationally and internationally.</li>
+                    </ol>
+
+                    <h5 class="modal-section-title">Action Taken</h5>
+                    <ol type="1">
+                        <li>Problem Understanding and Research</li>
+                        <ul>
+                            <li>Conducted interviews with flower stringing workers to identify health issues and bottlenecks.</li>
+                            <li>Analyzed the flower stringing process and identified repetitive manual tasks that could be automated.</li>
+                            <li>Gathered technical requirements for the device, including speed, precision, and ergonomics.</li>
+                        </ul>
+                        <li>Design and Development</li>
+                        <ul>
+                            <li>As a three-member team, brainstormed and conceptualized the device.</li>
+                            <li><b>Arduino Integration</b>Developed an automated machine using Arduino microcontroller technology to control the flower stringing process.</li>
+                            <li>Programmed Arduino to handle task-specific functions such as threading, tension control, and material movement.</li>
+                            <li>Assembled the entire machine, ensuring compactness and usability.</li>
+                            <li>Incorporated ergonomic design elements to minimize user strain during machine operation.</li>
+                        </ul>
+                        <li>Testing and Optimization</li>
+                        <ul>
+                            <li>Conducted iterative testing with flower stringing workers to fine-tune device speed and accuracy.</li>
+                            <li>Improved automation algorithms to achieve a stringing speed 4 times faster than manual methods.</li>
+                            <li>Ensured reliability of components to handle continuous operation in rural and urban settings.</li>
+                        </ul>
+                        <li>Deployment and Impact Assessment</li>
+                        <ul>
+                            <li>Distributed prototypes to local jasmine markets and gathered user feedback.</li>
+                            <li>Patented the device to protect intellectual property and establish market leadership.</li>
+                            <li>Promoted the device through local and online channels to expand its reach.</li>
+                        </ul>
+                    </ol>
+                    <h5 class="modal-section-title">Results</h5>
+                    <ol type="1">
+                        <li>Worker Well-being</li>
+                        <ul>
+                            <li>Reduced back pain, nerve weakness, and eye strain by 80%, significantly improving worker quality of life.</li>
+                            <li>Enhanced mental well-being and reduced workload stress for flower stringing workers.</li>
+                        </ul>
+                        <li>Increased Productivity</li>
+                        <ul>
+                            <li>Automation boosted stringing speed by 300%, enabling one worker to achieve the output of four.</li>
+                            <li>Production capacity expanded, meeting both domestic and international demand for Madurai jasmine flowers.</li>
+                        </ul>
+                        <li>Market Expansion</li>
+                        <ul>
+                            <li>Increased sales volume by 40% across the nation due to improved supply.</li>
+                            <li>Strengthened Madurai's position as a major supplier in the international flower market, attracting orders from Europe, the Middle East, and Southeast Asia</li>
+                            <li>Enabled online marketing, broadening market accessibility and visibility.</li>
+                        </ul>
+                        <li>Community and Economic Growth</li>
+                        <ul>
+                            <li>Provided a sustainable solution for jasmine farmers and workers, supporting livelihoods.</li>
+                            <li>Promoted Madurai as a global jasmine flower hub, creating indirect benefits such as better market prices for farmers.</li>
+                        </ul>
+                    </ol>
+                    <h5 class="modal-section-title">Executive Summary</h5>
+                    <h6>Innovative Flower Stringing Automation Device</h6>
+                    <P>Led the development of an automated flower stringing machine, addressing significant worker health issues and 
+                        productivity challenges in the jasmine flower industry. Collaborated with a team to design, program, and 
+                        assemble a device powered by Arduino, which increased productivity by 300%. Improved worker well-being, 
+                        reducing physical strain by 80%, and expanded market reach for Madurai jasmine flowers to global arenas. 
+                        Secured a patent for the device, fostering economic growth and establishing Madurai as a hub for international 
+                        flower markets.</P>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project7Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Automatic Rehabilitation Machine for Stroke Patients</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/temp.png" alt="Project 1" class="modal-project-image">
+                    <div class="modal-project-tech">
+                        <span class="tech-tag">June 2024</span>
+                    </div>
+                    <h5 class="modal-section-title">Problem</h5>
+                    <p>Stroke patients often face severe disabilities, particularly in the hands, fingers, and wrists, which limit their ability to perform daily tasks</p>
+                    <ul>
+                        <li>Traditional rehabilitation methods rely heavily on physiotherapists, which can be expensive and time-consuming.</li>
+                        <li>Many patients, especially in rural areas, lack access to continuous professional care.</li>
+                        <li>Existing machines for rehabilitation are costly and stationary, making them inaccessible for home use.</li>
+                    </ul>
+
+                    <h5 class="modal-section-title">Task</h5>
+                    <p>The objective was to design and fabricate a cost-effective, portable, and automated rehabilitation machine that :-</p>
+                    <ol type="1">
+                        <li>Enables stroke patients to perform passive exercises independently.</li>
+                        <li>Focuses on key affected areas: hands, fingers, and wrists.</li>
+                        <li>Offers affordability and portability to reach a broader audience.</li>
+                        <li>Serves as a foundation for future expansion to treat leg disabilities.</li>
+                    </ol>
+
+                    <h5 class="modal-section-title">Actions Taken</h5>
+                    <ol type="1">
+                        <li>Problem Understanding and Research</li>
+                        <ul>
+                            <li>Interviewed stroke patients and physiotherapists to understand rehabilitation needs and challenges</li>
+                            <li>Reviewed existing rehabilitation devices to identify design gaps, such as high cost and lack of portability.</li>
+                            <li>Analyzed hand, finger, and wrist movements to determine key exercise mechanisms.</li>
+                        </ul>
+                        <li>Design and Fabrication</li>
+                        <ul>
+                            <li><b>Collaborative Design : </b> Worked as part of a three-member team, contributing to the mechanical design and performing all design calculations</li>
+                            <li>Calculated torque, load distribution, and range of motion to ensure safe and effective exercise.</li>
+                            <li><b>Mechanism Development : </b> Developed a compact mechanism using cost-effective materials to reduce manufacturing costs by 40% compared to similar devices.</li>
+                            <li><b>Automation : </b> Integrated an automated control system to provide a variety of passive exercise modes, adjustable to individual needs.</li>
+                        </ul>
+                        <li>Prototyping and Testing</li>
+                        <ul>
+                            <li>Built a functional prototype and conducted trials with stroke patients under professional supervision.</li>
+                            <li>Collected data on ease of use, comfort, and effectiveness to refine the machine's operation.</li>
+                            <li>Ensured that the device maintained a compact and portable design, weighing under 3 kg for easy transportation.</li>
+                        </ul>
+                        <li>Future Scope and Expansion</li>
+                        <ul>
+                            <li>Initiated research on adapting the mechanism for leg rehabilitation, addressing knee and ankle joint movements.</li>
+                            <li>Documented the project for further collaboration with medical professionals and potential commercialization.</li>
+                        </ul>
+                    </ol>
+
+                    <h5 class="modal-section-title">Results</h5>
+                    <ol type="1">
+                        <li>Accessibility and Affordability</li>
+                        <ul>
+                            <li>Reduced production costs by 40%, making the device affordable for patients in low-income regions</li>
+                            <li>The portable design allows patients to perform rehabilitation exercises at home, minimizing dependence on physiotherapy sessions.</li>
+                        </ul>
+                        <li>Effective Rehabilitation</li>
+                        <ul>
+                            <li>Improved range of motion and muscle strength in hands, fingers, and wrists by an average of 30% after regular use over 6 weeks.</li>
+                            <li>Received positive feedback from patients for ease of use and comfort.</li>
+                        </ul>
+                        <li>Innovation and Expansion</li>
+                        <ul>
+                            <li>Provided a foundation for developing a similar device for leg rehabilitation.</li>
+                            <li>Positioned the project as a scalable solution for comprehensive stroke rehabilitation.</li>
+                        </ul>
+                    </ol>
+                    
+                    <h5 class="modal-section-title">Results</h5>
+                    <p><b>Portable Rehabilitation Device for Stroke Patients</b><br>
+                        Designed and fabricated a cost-effective, portable machine for stroke patients, enabling passive exercises for 
+                        hands, fingers, and wrists. Collaborated with a three-member team to perform mechanical design and detailed 
+                        calculations, ensuring safety and effectiveness. Reduced production costs by 40%, making the device accessible 
+                        to a broader audience, and achieved measurable improvements in patient mobility. Currently expanding the design 
+                        to address leg rehabilitation, broadening its application in stroke recovery.
+                    </p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-outline-primary">View Source Code</a>
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

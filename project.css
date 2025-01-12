@@ -1,115 +1,219 @@
-    body {
-    background-color: #1a1a1f;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  background-color: #1a1a1f;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-    background-color: transparent !important;
-    padding: 1rem 2rem;
+  background-color: transparent !important;
+  padding: 1rem 2rem;
 }
 
 .nav-link {
-    color: white !important;
-    margin: 0 1rem;
+  color: white !important;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+  transform-origin: right center;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
 }
 
 .github-btn {
-    background-color: transparent;
-    border: 1px solid #6c63ff;
-    color: #6c63ff;
-    padding: 0.5rem 2rem;
-    border-radius: 25px;
-    transition: all 0.3s;
+  background-color: transparent;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  transition: all 0.3s;
 }
 
 .github-btn:hover {
-    background-color: #6c63ff;
-    color: white;
+  background-color: #6c63ff;
+  color: white;
 }
 
 .projects-section {
-    padding: 4rem 2rem;
-    text-align: center;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .projects-heading {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .projects-subheading {
-    color: #8b8b8b;
-    margin-bottom: 3rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  color: #8b8b8b;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card {
-    background-color: rgba(108, 99, 255, 0.1);
-    border: 1px solid #6c63ff;
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    transition: all 0.3s ease;
-    height: 100%;
-    text-align: left;
+  background-color: rgba(108, 99, 255, 0.1);
+  border: 1px solid #6c63ff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: left;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
 
 .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .project-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
 }
 
 .project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .tech-tag {
-    background-color: rgba(108, 99, 255, 0.2);
-    color: #6c63ff;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
+  background-color: rgba(108, 99, 255, 0.2);
+  color: #6c63ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
 }
 
 .project-description {
-    color: #a9a9a9;
-    margin-bottom: 1rem;
-    line-height: 1.6;
+  color: #a9a9a9;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .project-links {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .project-link {
-    color: #6c63ff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  color: #6c63ff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .project-link:hover {
-    color: #5550d0;
+  color: #5550d0;
+}
+
+/*new for popup ig*/
+.project-card {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: #1a1a1f;
+  border: 1px solid #6c63ff;
+  color: white;
+}
+
+.modal-header {
+  border-bottom: 1px solid #6c63ff;
+}
+
+.modal-footer {
+  border-top: 1px solid #6c63ff;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.modal-project-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.modal-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.modal-section-title {
+  color: #6c63ff;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.modal ul {
+  color: #a9a9a9;
+  padding-left: 1.2rem;
+}
+
+.modal ul li {
+  margin-bottom: 0.5rem;
+}
+
+.btn-outline-primary {
+  color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn-primary:hover {
+  background-color: #5550d0;
+  border-color: #5550d0;
+}
+
+/* Prevent link clicks from triggering modal */
+.project-links {
+  position: relative;
+  z-index: 1;
+}
+.graph {
+  display: block; /* Ensures the image behaves as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  text-align: center; /* Aligns within its container if inline */
 }
