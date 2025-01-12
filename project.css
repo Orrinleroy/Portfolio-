@@ -65,12 +65,15 @@ body {
   margin-right: auto;
 }
 
+.row-gap {
+  margin-bottom: 2rem;
+}
+
 .project-card {
   background-color: rgba(108, 99, 255, 0.1);
   border: 1px solid #6c63ff;
   border-radius: 15px;
   padding: 1.5rem;
-  margin-bottom: 2rem;
   transition: all 0.3s ease;
   height: 100%;
   text-align: left;

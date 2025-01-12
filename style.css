@@ -214,6 +214,7 @@ body {
   max-width: 500px;
   height: 48%;
   margin-bottom: 15px;
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
 .skills-card-2 {
   background-color: #1e1e24;
@@ -223,6 +224,7 @@ body {
   width: 100%;
   max-width: 500px;
   height: 48%;
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
 
 .skills-card h3 {
@@ -450,7 +452,7 @@ body {
   }
 }
 .contact-section {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
