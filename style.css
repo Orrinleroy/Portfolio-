@@ -535,3 +535,7 @@ textarea.form-control {
 ::placeholder {
   color: #8b8b8b;
 }
+
+footer {
+  background-color: #1e1e24;
+}
