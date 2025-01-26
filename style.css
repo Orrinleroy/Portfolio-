@@ -536,6 +536,18 @@ textarea.form-control {
   color: #8b8b8b;
 }
 
-footer {
-  background-color: #1e1e24;
+.arrow-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+
+}
+
+.arrow-img {
+  height: 30px;
+  width: 30px;
 }
