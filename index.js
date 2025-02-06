@@ -1,6 +1,7 @@
 const spinner = document.querySelector('.spinner');
 const heroContainer = document.querySelector('.container');
 const skillsContainer = document.querySelector('.skills-container');
+const skillsContainerExt = document.querySelector('.skills-container-extended');
 const expCard = document.querySelectorAll('.timeline-card');
 const educationCard = document.querySelectorAll('.education-card');
 const arrowBtn = document.getElementById('arrow-btn');
@@ -31,6 +32,8 @@ const sectionObserver = new IntersectionObserver(revealSections, {
 });
 
 sectionObserver.observe(skillsContainer);
+
+sectionObserver.observe(skillsContainerExt);
 
 expCard.forEach(card => {
   sectionObserver.observe(card);
